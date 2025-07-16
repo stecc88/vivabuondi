@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buondì</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="../img/logo.png" alt="logo" width="40"
+                        class="me-2" />Buondì</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="./pages/cursos.html">Cursos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/sobreNosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide ">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                    class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="./img/cinqueTerre.jpg" class="d-block w-100" alt="..." />
+
+                    <div class="carousel-caption d-md-none ">
+                        <h5>Clases de italiano online.</h5>
+                        <p> Para todos los niveles. Grupos reducidos, material incluido.</p>
+                        <a href="./pages/contacto.html" class="btn btn-primary mt-1 mb-3 ">Contactame</a>
+                    </div>
+
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Aprendé italiano con clases personalizadas, adaptadas a tu ritmo y tus objetivos.</h5>
+                        <p>Lecciones individuales y grupales, online o presenciales. También ofrecemos nivelación y
+                            acompañamiento académico para instituciones educativas.</p>
+                        <a href="./pages/contacto.html" class="btn btn-primary mt-1 mb-3 ">Contactame</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./img/roma.jpg" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption d-block d-md-none">
+                        <a href="./pages/contacto.html" class="btn btn-primary mt-1 mb-3">Contactame</a>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Experiencia inmersiva</h5>
+                        <p>Sumergite en la lengua y la cultura italiana desde la comodidad de tu casa.</p>
+                        <a href="./pages/contacto.html" class="btn btn-primary mt-1 mb-3">Contactame</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <!-- Nuestros Cursos -->
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Nuestros Cursos</h2>
+            <div class="row">
+
+                <!-- Card A1-A2 -->
+                <div class="col-md-4 mb-4 d-flex">
+                    <div class="card h-100 w-100">
+                        <img src="./img/bebe.PNG" class="card-img-top img-card-unificada" alt="Curso A1-A2" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Nivel A1 - A2</h5>
+                            <p class="card-text">Iniciación al italiano. Aprendé las bases del idioma con un enfoque
+                                práctico.</p>
+                            <a href="./pages/cursos.html" class="btn btn-outline-primary mt-auto">Más información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card B1-B2 -->
+                <div class="col-md-4 mb-4 d-flex">
+                    <div class="card h-100 w-100">
+                        <img src="./img/adolescente.PNG" class="card-img-top img-card-unificada" alt="Curso B1-B2" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Nivel B1 - B2</h5>
+                            <p class="card-text">Perfeccionamiento del idioma. Conversación fluida y comprensión
+                                avanzada.</p>
+                            <a href="./pages/cursos.html" class="btn btn-outline-primary mt-auto">Más información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card C1-C2 -->
+                <div class="col-md-4 mb-4 d-flex">
+                    <div class="card h-100 w-100">
+                        <img src="./img/adulto.PNG" class="card-img-top img-card-unificada" alt="Curso C1-C2" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Nivel C1 - C2</h5>
+                            <p class="card-text">Dominio completo del idioma. Preparación para exámenes oficiales.</p>
+                            <a href="./pages/cursos.html" class="btn btn-outline-primary mt-auto">Más información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cards extras sin imágenes -->
+                <div class="col-md-6 mb-4 d-flex">
+                    <div class="card h-100 w-100 shadow-lg border-0 bg-light text-dark animate-hover">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-primary">Preparación Examen PLIDA</h5>
+                            <p class="card-text">Entrenamiento intensivo para aprobar el examen oficial con simulacros y
+                                estrategias personalizadas.</p>
+                            <a href="./pages/contacto.html" class="btn btn-outline-primary mt-auto">Más
+                                información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4 d-flex">
+                    <div class="card h-100 w-100 shadow-lg border-0 bg-light text-dark animate-hover">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-success">Apoyo Escolar de Italiano</h5>
+                            <p class="card-text">Clases de refuerzo para primaria y secundaria: acompañamiento,
+                                nivelación y preparación de exámenes.</p>
+                            <a href="./pages/contacto.html" class="btn btn-outline-primary mt-auto">Más
+                                información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Precios -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Planes y Precios</h2>
+    <div class="row justify-content-center gx-4 gy-4">
+
+        <!-- Card 1: Clases de Italiano -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card border-info shadow h-100">
+                <div class="card-body text-center d-flex flex-column">
+                    <h5 class="card-title">Clases de Italiano</h5>
+                    <p class="card-text">Clases dinámicas adaptadas a tu nivel y objetivos.</p>
+                    <ul class="list-unstyled">
+                        <li>🕒 Duración: 60 minutos</li>
+                        <li>📅 Horarios flexibles</li>
+                        <li>💻 Plataforma: Zoom</li>
+                    </ul>
+
+                    <h3 class="text-info mt-3">$12.000 ARS</h3>
+                    <p class="text-muted">por clase</p>
+
+                    <hr>
+
+                    <h6 class="fw-bold">🎁 Promo: Pack 5 clases</h6>
+                    <p class="text-dark mb-1">Pagás solo</p>
+                    <h4 class="text-info">$54.000 ARS</h4>
+                    <p class="text-muted">Precio final por 5 clases</p>
+
+                    <a href="./pages/contacto.html" class="btn btn-info mt-auto">Consultar disponibilidad</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Exámenes Internacionales -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card border-warning shadow h-100">
+                <div class="card-body text-center d-flex flex-column">
+                    <h5 class="card-title">Exámenes Internacionales</h5>
+                    <p class="card-text">Preparación intensiva para niveles A1 a C2 del examen <span class="fw-bold">PLIDA</span>.</p>
+                    <ul class="list-unstyled">
+                        <li>📚 Material oficial incluido</li>
+                        <li>🕒 Clases de 60 minutos</li>
+                        <li>🎓 Evaluaciones simuladas</li>
+                    </ul>
+
+                    <h3 class="text-warning mt-3">$18.000 ARS</h3>
+                    <p class="text-muted">por clase</p>
+
+                    <hr>
+
+                    <h6 class="fw-bold">🎁 Promo: Pack 5 clases</h6>
+                    <p class="text-dark mb-1">Pagás solo</p>
+                    <h4 class="text-warning">$78.000 ARS</h4>
+                    <p class="text-muted">Precio final por 5 clases</p>
+
+                    <a href="./pages/contacto.html" class="btn btn-warning text-white mt-auto">Consultar disponibilidad</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-white pt-4 pb-2">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-12 col-md-4 mb-4">
+                    <h5>Buondì</h5>
+                    <p>Clases de italiano online para todos los niveles. Grupos reducidos, material incluido.</p>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li><a href="./pages/cursos.html" class="text-white text-decoration-none">Cursos</a></li>
+                        <li><a href="./pages/contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+                        <!-- <li><a href="#" class="text-white text-decoration-none">Preguntas frecuentes</a></li> -->
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <h5>Contacto</h5>
+                    <p>Email: buondi@gmail.com</p>
+                    <p>WhatsApp:</p>
+                    <ul class="list-unstyled">
+                        <li>+54 9 380 434 5886</li>
+                        <li>+54 9 380 4803091</li>
+                    </ul>
+
+
+
+                    <p>Dirección: La Rioja, Argentina</p>
+                    <!--   <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-2">
+            <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-youtube"></i></a> 
+           
+          </div> -->
+                </div>
+            </div>
+            <hr class="border-light" />
+            <div class="text-center">
+                <small>© 2025 Buondì. Todos los derechos reservados.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

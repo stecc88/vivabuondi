@@ -1,0 +1,161 @@
+/* === 1. RESET GENERAL === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === 2. TIPOGRAFÍA Y COLOR GENERAL === */
+body,
+.cuadro {
+  background-color: #f5f2ed;
+  font-family: 'Segoe UI', sans-serif;
+  color: #2b2d42;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+
+/* === 3. NAVBAR === */
+header,
+footer {
+  background-color: #2b2d42;
+}
+
+.navbar-brand,
+.nav-link,
+.navbar-toggler-icon {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: #ef233c !important;
+}
+
+nav div img {
+  width: 50px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* === 4. BOTONES === */
+.btn-primary,
+.btn-success,
+.btn-outline-success {
+  transition: all 0.3s ease;
+}
+
+.btn-outline-success {
+  color: #ef233c;
+  border-color: #ef233c;
+}
+
+.btn-outline-success:hover {
+  background-color: #ef233c;
+  color: #fff;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* === 5. CARDS === */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.img-card-unificada {
+  object-fit: cover;
+  object-position: center top;
+  height: 400px;
+  width: 100%;
+}
+
+/* === 6. CAROUSEL === */
+.carousel-item {
+  height: 550px;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 70%;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 1rem;
+  color: #ffffff;
+}
+
+/* Seccion cursos */
+
+.animate-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.animate-hover:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.15);
+}
+
+
+/* === 7. SOBRE MÍ === */
+img.rounded-circle {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* === 8. INPUTS Y FORMULARIOS === */
+input:focus,
+textarea:focus {
+  border-color: #ef233c !important;
+  box-shadow: 0 0 0 0.25rem rgba(239, 35, 60, 0.25);
+}
+
+/* === 9. ICONOS === */
+.bi {
+  transition: all 0.3s ease;
+}
+
+.bi:hover {
+  color: #ef233c !important;
+  transform: scale(1.2);
+}
+
+footer .bi:hover {
+  transform: scale(1.3);
+}
+
+/* === 10. FOOTER === */
+footer h5 {
+  color: #ef233c;
+}
+
+footer a:hover {
+  color: #ef233c !important;
+}
+
+/* === 11. ANIMACIONES === */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-in-out;
+}

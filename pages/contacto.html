@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buondì</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html"><img src="../img/logo.png" alt="logo" width="40"
+            class="me-2" />Buondì</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bg-light"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="./cursos.html">Cursos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./sobreNosotros.html">Sobre Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="./sobreNosotros.html">Contacto</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- main -->
+
+  <main class="container my-5">
+    <!-- Título principal -->
+    <section class="text-center mb-5 fade-in-up">
+      <h1 class="mb-3">Contacto</h1>
+      <p class="lead">¿Tenés dudas? ¿Querés reservar una clase o pedir más información? Escribinos y te responderemos lo
+        antes posible.</p>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section class="mb-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form id="form" name="contacto">
+            <input type="hidden" name="form-name" value="contacto">
+
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre y apellido</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: Mario Rossi" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@email.com" required>
+            </div>
+            <div id="alert-container" class="alert alert-danger d-none" role="alert">
+              ¡Mensaje enviado correctamente!
+            </div>
+
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="5"
+                placeholder="Contanos en qué curso estás interesado/a, o dejá tu consulta" required></textarea>
+            </div>
+
+            <input type="submit" class="btn btn-primary" id="button" value="Enviar mensaje">
+          </form>
+
+          <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+          <script type="text/javascript">
+            emailjs.init('iicCkxTso957t3FAb')
+          </script>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Información de contacto -->
+    <section class="text-center py-4 cuadro">
+      <div class="container">
+        <h4 class="mb-4 fw-bold">También podés contactarnos directamente:</h4>
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-5">
+            <p class="mb-3"><strong>📧 Email:</strong> <a href="mailto:buondistudio@gmail.com"
+                class="text-decoration-none text-dark">buondistudio@gmail.com</a></p>
+
+            <p class="mb-3"><strong>📱 WhatsApp:</strong><br>
+              <a href="https://wa.me/5493804345886" target="_blank"
+                class="d-inline-block text-success fw-semibold text-decoration-none">
+                +54 9 380 434 5886
+              </a><br>
+              <a href="https://wa.me/5493804803091" target="_blank"
+                class="d-inline-block text-success fw-semibold text-decoration-none">
+                +54 9 380 480 3091
+              </a>
+            </p>
+
+            <p class="mb-3"><strong>📍 Dirección:</strong> La Rioja, Argentina</p>
+
+            <!-- Redes sociales o íconos (opcional) -->
+            <div class="d-flex justify-content-center gap-4 mt-4 fs-4">
+              <!-- <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-dark"><i class="bi bi-youtube"></i></a> -->
+              <a href="https://wa.me/5493804345886" class="text-success" target="_blank"
+                title="Escribinos por WhatsApp">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-white pt-4 pb-2">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-12 col-md-4 mb-4">
+          <h5>Buondì</h5>
+          <p>Clases de italiano online para todos los niveles. Grupos reducidos, material incluido.</p>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <h5>Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="../index.html" class="text-white text-decoration-none">Inicio</a></li>
+            <li><a href="./cursos.html" class="text-white text-decoration-none">Cursos</a></li>
+            <li><a href="./contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+            <!-- <li><a href="#" class="text-white text-decoration-none">Preguntas frecuentes</a></li> -->
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <h5>Contacto</h5>
+          <p>Email: buondi@gmail.com</p>
+          <p>WhatsApp:</p>
+          <ul class="list-unstyled">
+            <li>+54 9 380 434 5886</li>
+            <li>+54 9 380 4803091</li>
+          </ul>
+
+
+
+          <p>Dirección: La Rioja, Argentina</p>
+          <!--   <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-2">
+            <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-youtube"></i></a> 
+           
+          </div> -->
+        </div>
+      </div>
+      <hr class="border-light" />
+      <div class="text-center">
+        <small>© 2025 Buondì. Todos los derechos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('button');
+
+    document.getElementById('form').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      btn.value = 'Enviando...';
+
+      const serviceID = 'default_service';
+      const templateID = 'template_wtuxia4';
+
+      emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+          btn.value = 'Enviar mensaje';
+
+          // ⬅️ LIMPIA los campos del formulario
+          document.getElementById('form').reset();
+
+          const alertBox = document.getElementById('alert-container');
+          alertBox.classList.remove('d-none');
+          alertBox.classList.remove('alert-danger'); // Por si quedó de un error anterior
+          alertBox.classList.add('alert-success');
+          alertBox.textContent = '¡Mensaje enviado correctamente!';
+
+          setTimeout(() => {
+            alertBox.classList.add('d-none');
+          }, 5000);
+        }, (err) => {
+          btn.value = 'Enviar mensaje';
+
+
+
+          const alertBox = document.getElementById('alert-container');
+          alertBox.classList.remove('d-none');
+          alertBox.classList.remove('alert-success');
+          alertBox.classList.add('alert-danger');
+          alertBox.textContent = 'Error al enviar el mensaje: ' + JSON.stringify(err);
+
+          setTimeout(() => {
+            alertBox.classList.add('d-none');
+          }, 5000);
+        });
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
